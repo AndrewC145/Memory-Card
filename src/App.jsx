@@ -43,13 +43,9 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen flex-col items-center overflow-auto bg-[url(./assets/images/night-city.jpg)] text-white">
-      <div className="flex w-full items-start justify-between p-4">
-        <img className="" src={cyberpunkLogo}></img>
-        <div>
-          <p>Score: {score}</p>
-          <p>Best Score: {bestScore}</p>
-        </div>
+    <div className="flex h-screen flex-col items-center overflow-auto bg-[url(./assets/images/night-city.jpg)] text-white lg:justify-center">
+      <div className="flex w-full items-center justify-between p-4">
+        <img className="h-24 w-40 md:w-52 lg:w-64 xl:w-96" src={cyberpunkLogo}></img>
       </div>
       <CardGrid cards={cards} />
     </div>
