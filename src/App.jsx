@@ -10,9 +10,11 @@ import solomonReed from "./assets/images/solomon-reed.jpg";
 import songbird from "./assets/images/songbird.jpg";
 import viktorVektor from "./assets/images/viktor-vektor.jpg";
 import dexterDeShawn from "./assets/images/dexter-deshawn.jpg";
+import cyberpunkLogo from "./assets/images/cyberpunklogo.svg";
 
 function App() {
   const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
   const [cards, setCards] = useState([
     { name: "V", img: cyberpunkV },
     { name: "Jackie Welles", img: jackieWelles },
@@ -41,8 +43,14 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Memory Card Game</h1>
+    <div className="flex h-screen flex-col items-center overflow-auto bg-[url(./assets/images/night-city.jpg)] text-white">
+      <div className="flex w-full items-start justify-between p-4">
+        <img className="" src={cyberpunkLogo}></img>
+        <div>
+          <p>Score: {score}</p>
+          <p>Best Score: {bestScore}</p>
+        </div>
+      </div>
       <CardGrid cards={cards} />
     </div>
   );
