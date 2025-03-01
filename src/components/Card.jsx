@@ -1,6 +1,6 @@
-export default function Card({ card, onClick }) {
+export default function Card({ card, handleShuffle }) {
   return (
-    <div onClick={() => onClick(card)}>
+    <div onClick={handleShuffle}>
       <img src={card.img}></img>
       <p>{card.name}</p>
     </div>
