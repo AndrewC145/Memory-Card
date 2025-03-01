@@ -1,7 +1,7 @@
 # Memory Card Game
 
 Cyberpunk Themed Card Game Project to test your memory skills
-![memory game home](<url(./assets/images/memoryCardHome.jpg)>)
+![memory game home](<url(src/assets/images/memoryCardHome.jpg)>)
 
 ## Gameplay
 
