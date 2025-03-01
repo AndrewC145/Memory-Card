@@ -45,6 +45,12 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    if (score > bestScore) {
+      setBestScore(score);
+    }
+  }, [score, bestScore]);
+
   return (
     <div className="flex h-screen flex-col items-center overflow-auto bg-[url(./assets/images/night-city.jpg)] text-white xl:justify-center">
       <div className="flex w-full items-center justify-between p-4">
